@@ -1,0 +1,34 @@
+function iPhone2(ASIN, color, display, camera, bluetooth) {
+    return {
+        ASIN: ASIN,
+        color: color,
+        display: display,
+        camera: camera,
+        bluetooth: bluetooth,
+        dial: function() {
+            return "tring.. tring...";
+        },
+        sendMessage: function() {
+            return "Sending message...";
+        },
+        cameraClick: function() {
+            return "Camera clicked";
+        },
+        connectBluetooth: function() {
+            return "Bluetooth connected successfully...";
+        }
+    };
+}
+
+let i2 = iPhone2(1, "B09X67JBQV", 7.8, "IOS", "5.1");
+
+console.log(i2.ASIN); // 1
+console.log(i2.color); // "B09X67JBQV"
+console.log(i2.display); // 7.8
+console.log(i2.camera); // "IOS"
+console.log(i2.bluetooth); // "5.1"
+
+console.log(i2.dial()); // "tring.. tring..."
+console.log(i2.sendMessage()); // "Sending message..."
+console.log(i2.cameraClick()); // "Camera clicked"
+console.log(i2.connectBluetooth()); // "Bluetooth connected successfully..."
