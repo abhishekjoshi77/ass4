@@ -1,0 +1,18 @@
+function animal(noOfLegs, vegetarian) {
+    return {
+        noOfLegs: noOfLegs,
+        vegetarian: vegetarian,
+        eat: function() {
+            return "eating...";
+        },
+        greet: function() {
+            return `Hi, I have ${noOfLegs} legs.`;
+        }
+    };
+}
+
+// Creating an animal object
+let a1 = animal(4, true);
+
+console.log(a1.eat()); // "eating..."
+console.log(a1.greet()); // "Hi, I have 4 legs."
