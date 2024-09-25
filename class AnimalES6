@@ -1,0 +1,20 @@
+class AnimalES6 {
+    constructor(noOfLegs, vegetarian) {
+        this.noOfLegs = noOfLegs;
+        this.vegetarian = vegetarian;
+    }
+
+    eat() {
+        return "eating...";
+    }
+
+    greet() {
+        return `Hi, I have ${this.noOfLegs} legs.`;
+    }
+}
+
+// Creating an animal object using the AnimalES6 class
+let animalES6 = new AnimalES6(4, true);
+
+console.log(animalES6.eat()); // "eating..."
+console.log(animalES6.greet()); // "Hi, I have 4 legs."
