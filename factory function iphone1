@@ -1,0 +1,28 @@
+function iPhone1(ASIN, color, display, camera) {
+    return {
+        ASIN: ASIN,
+        color: color,
+        display: display,
+        camera: camera,
+        dial: function() {
+            return "tring.. tring...";
+        },
+        sendMessage: function() {
+            return "Sending message...";
+        },
+        cameraClick: function() {
+            return "Camera clicked";
+        }
+    };
+}
+
+let i1 = iPhone1(1, "B09X67JBQV", 7.8, "IOS");
+
+console.log(i1.ASIN); // 1
+console.log(i1.color); // "B09X67JBQV"
+console.log(i1.display); // 7.8
+console.log(i1.camera); // "IOS"
+
+console.log(i1.dial()); // "tring.. tring..."
+console.log(i1.sendMessage()); // "Sending message..."
+console.log(i1.cameraClick()); // "Camera clicked"
